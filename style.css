@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    color: #263138;
+}
+
+/*EDIÇAO DO CABEÇALHO */
+
+header{
+    /* troca a cor de fundo*/
+    background-color: #7fd6a4;
+
+    /*alinha os itens horizontalmente*/
+    display: flex;
+
+    /*alinha o conteudo no centr*/
+    align-items:center;
+
+    /*justifica p conteudo, neste caso, aesta aplicando espaçamento horizontal entre os termos.*/
+    justify-content:space-between ;
+
+    /*aplica espaçamento no top, direita, embaixo e esruqeda, respectivamente.*/
+    padding: 24px 80px 24px 80px;
+}
+
+header nav a {
+    font-weight: 600;
+    padding: 32px;
+    color: white;
+    /*Esse atributo foi utilizado para retirar o sublinhado padrão sobre os links, lembrando que estamos editando uma tag de links.*/
+    text-decoration: none;
+}
+
+/*EDIÇAO DO DA PRIMEIRA PAGINA*/
+
+#inicio{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 80px 128px 80px;
+    position: relative;
+}
+
+
+h1,
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px ;
+}
+
+p.paragrafo {
+    /*altura de linha*/
+    line-height:150%;
+    margin-bottom: 32px;
+
+}
+
+.botao{
+    background-color:#7fd6a4;
+    padding: 16px 32px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.botaotransp{
+    background-color: transparent;
+    color: #7fd6a4;
+    padding: 18px 32px;
+    text-underline-offset: 4px;
+}
+
+.absolute{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width:100%;
+    z-index: -10;
+}
+
+/*EDIÇAO DO CMAPO CLINICAS */
+
+#clinica{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+#clinica li{
+    margin-bottom: 16px;
+    margin-left: 32px ;
+}
+
+
+
+/*EDIÇAO DO CMAPO FARMACIA */
+
+#farmacia{
+    padding: 64px 80px;
+    text-align: center;
+
+}
+
+#farmacia img{
+    margin: 64px auto;
+}
+
+#farmacia .pargrafo{
+    max-width:950px;
+    margin: 0 auto; 
+}
+
+/*EDIÇAO DO CAMPO DUVIDAS */
+
+#duvidas{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+}
+
+.duvidas{
+    position: relative;
+}
+.duvidas h3{
+    border: 2px solid #7fd6a4;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.duvidas img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+
+}
+
+.duvidas .paragrafo{
+    border-right: 1px solid #7fd6a4;
+    border-left: 1px solid #7fd6a4;
+    border-bottom: 1px solid #7fd6a4;
+    border-radius: 0 0 8px 8px ;
+    margin-top: -8px ;
+    padding: 24px;
+
+}
+
+.duvidas p {
+    border-right: 1px solid #FF725E;
+    border-bottom: 1px solid #FF725E;
+    border-left: 1px solid #FF725E;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: .4;
+  }
+  
+  .duvidas.ativa p {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+  }
+
+
+
+/*EDIÇAO DO RODAPE */
+
+footer{
+    background-color: #7fd6a4;
+    display: flex;
+    justify-content: space-between;
+    gap:80px;
+    padding: 64px 80px;
+}
+
+footer img,
+footer .titulo{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+footer nav a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 16px;
+    
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+/*EDIÇAO DO CAMPO DE COPYRIGHT */
+
+#copyright{
+    background-color: #263138;
+    display: flexbox;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+#copyright a {
+    padding: 16px;
+    align-items: center;
+}
+
